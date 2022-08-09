@@ -1,4 +1,9 @@
-div {
-    background-color: red;
-    border:none;
+.section-one {
+    background-color: rgb(27, 58, 85);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
 }
