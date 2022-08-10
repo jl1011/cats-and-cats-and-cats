@@ -1,37 +1,158 @@
-
-.section-one {
-    background-color: rgb(27, 58, 85);
+* {
+    font-family: Tahoma, Brutel, Verdana, sans-serif; /*todo: investigate how this works-->*/
+    font-weight: 700;
+    border: 2px red solid;
+    /* border: 1px dashed; */
 }
 
+.section-one {
+    background-color: rgb(22, 49, 71);
+    padding-bottom: 5vh;
+}
+
+/* section one - header */
 .header {
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*background-color: #133e68;*/
-    font-family: Tahoma, Brutel, Verdana, sans-serif; /*todo: investigate how this works-->*/
-    font-weight: 700;
-    font-size: 23px;
-    padding-bottom: 300px;
-    height: 30px;
+    font-size: 5vh;
+    height: 10vh;
 }
+
 
 .header-logo {
     flex: 2;
     justify-content: center;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 2vh;
+    padding-top: 2vh;
+}
+
+.header-links-container {
+    display: flex;
+    justify-content: end;
+    flex: 2;
+    font-size: 3vh;
+    padding-top: 2vh;
+    padding-right: 2vh;
+    /* border: red dotted 2px; */
 }
 
 .header-links {
+    font-family: Helvetica, sans-serif;
     display: flex;
-    justify-content: end;
-    flex: 5;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
+    justify-content: center;
+    padding-left: 2.6vh;
+    padding-right: 2.6vh;
+    color: gold;
+    font-weight: 500;
 }
 
+a:hover {
+    color: darkgoldenrod;
+}
+
+/* section one - left right box */
+
+.section-one-left-right-box {
+    background-color: rgba(163, 143, 32, 0.83);
+    border: 5px double goldenrod;
+    padding: 2vh;
+    display: flex;
+    flex: 1 2;
+    flex-direction: row;
+    color: white;
+    margin-left: 10vh;
+    margin-right:10vh;
+    justify-content: space-evenly;
+}
+
+#obvious-text {
+    color: aliceblue;
+}
+
+.section-one-left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one-right-box {
+    display:flex;
+    justify-content: center;
+    align-items: center; /*causes vertical alignment because its the cross axis in this flexbox!*/
+}
+
+.section-header {
+    font-size: 5vh;
+}
+
+#dog-text {
+    color: #0C294A;
+    font-size: 1.5vh;
+}
+/* section two */
+
 .section-two {
+    padding-bottom: 40vh;
+    background-color: #454343;
+}
+
+
+#what-kind-title { /*Great way to make it centered quickly*/
+    display: flex;
+    font-size: 13vh;
+    justify-content: space-evenly;
+    color: #BFBF19;
+}
+
+.type-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.pic-and-type-box {
+    justify-content: space-evenly;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.cat-type-pictures {
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: auto;
+    height: 20vw;
+    border: #0080ff double 5px;
+}
+
+.subtitle-text {
+    text-align: center;
+    width: 20vw;
+    height: available;
+}
+
+/* section three */
+
+.section-three {
     padding-bottom: 300px;
 }
+/* section two */
+
+.center-kitties {
+    display: flex;
+    padding: 0.2vh;
+    align-content: space-between;
+    min-height: 15vh;
+    max-height: 40vh;
+}
+.section-four {
+    padding-bottom: 300px;
+}
+
