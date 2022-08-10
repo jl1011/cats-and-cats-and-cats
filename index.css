@@ -1,7 +1,6 @@
 * {
     font-family: Tahoma, Brutel, Verdana, sans-serif; /*todo: investigate how this works-->*/
     font-weight: 700;
-    border: 2px red solid;
     /* border: 1px dashed; */
 }
 
@@ -110,32 +109,58 @@ a:hover {
 .type-flexbox {
     display: flex;
     flex-direction: row;
+    flex: 1;
     justify-content: space-evenly;
-    align-items: center;
-    padding-right: 5vw;
-    padding-left: 5vw;
+    align-items: flex-start;
 }
 
 .pic-and-type-box {
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    display: flex;
     align-items: center;
-    display: inline-flex;
     flex-direction: column;
+    width: 30vw;
+    height: 105vw;
+    overflow: hidden;
+    /* border: #0080ff double 5px; */
 }
 
 .cat-type-pictures {
-    justify-content: flex-start;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30vw;
+    object-fit: cover;
+    height: 15vw;
     overflow: hidden;
-    width: auto;
-    height: 20vw;
-    border: #0080ff double 5px;
+    clip-path: circle();
+}
+
+#first-cat {
+    object-position: 4vw 20%;
+}
+
+
+#second-cat {
+    object-position: 1vw -15vw;;
+}
+
+#third-cat {
+    object-position: -2vw -3vw;
+
+}
+
+#fourth-cat {
+    object-position: 2vw -1vw;
+
 }
 
 .subtitle-text {
     text-align: center;
     width: 20vw;
     height: available;
+    color: goldenrod;
+    font-size: 3vh;
 }
 
 /* section three */
