@@ -1,9 +1,37 @@
+
 .section-one {
     background-color: rgb(27, 58, 85);
 }
 
 .header {
+    color: white;
     display: flex;
     flex-direction: row;
-    background-color: brown;
+    justify-content: center;
+    /*background-color: #133e68;*/
+    font-family: Tahoma, Brutel, Verdana, sans-serif; /*todo: investigate how this works-->*/
+    font-weight: 700;
+    font-size: 23px;
+    padding-bottom: 300px;
+    height: 30px;
+}
+
+.header-logo {
+    flex: 2;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: end;
+    flex: 5;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.section-two {
+    padding-bottom: 300px;
 }
